@@ -119,3 +119,8 @@ input[type="checkbox"] {
 .slider.round:before {
   border-radius: 50%;
 }
+
+.card-size{
+	width:600px;
+	height:500px;
+}
