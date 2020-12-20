@@ -1,0 +1,27 @@
+.header-style{
+    text-align: center;
+    font-size: 28px;
+}
+.question-title-margin{
+    padding: 15px;
+    margin: 6px;
+}
+.coding-style{
+    background-color: #f0ede6;
+    font-family: monospace;
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+}
+.question-margin{
+    padding: 20px;
+    margin-left: 50px;
+}
+hr   {
+ margin-top: 10px;
+margin-bottom: 10px;
+color: #ddd;
+height: 2px;
+background-color: #ededed;
+border-width: 0;
+}

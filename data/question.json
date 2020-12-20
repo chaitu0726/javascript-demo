@@ -1,0 +1,28 @@
+{
+    "Question_1":{
+        "isCodingQuestion":true,
+        "noOfOptions":4,
+        "question":"What will be the output of the program?",
+        "choices":[
+            "12 15",
+            "15 15",
+            "3 4 5 3 7 5",
+            "3 7 5 3 7 5"
+        ],
+        "snippetData":"question_1.txt",
+        "marks":2
+    },
+    "Question_2":{
+        "isCodingQuestion":true,
+        "noOfOptions":4,
+        "question":"What will be the output of the program?",
+        "choices":[
+            "true true",
+            "false true",
+            "true false",
+            "false false"
+        ],
+        "snippetData":"question_2.txt",
+        "marks":2
+    }
+}
