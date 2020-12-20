@@ -4,7 +4,7 @@ For jquery-practice
 1. Pull the branch
 2. Open in VS Code
 3. download Live Server Extension for VS Code.
-4. Run the questions-page.html
+4. Run the questions-page.html using Live Server.
 
 To add questions
 1. add question in data/question.json with proper format (use the format use for first question)
