@@ -24,5 +24,17 @@
         ],
         "snippetData":"question_2.txt",
         "marks":2
+    },
+    "Question_3":{
+        "isCodingQuestion":false,
+        "noOfOptions":4,
+        "question":"Which data type is most suitable for storing a number 65000 in a 32-bit system?",
+        "choices":[
+            "signed short",
+            "unsigned short",
+            "long",
+            "int"
+        ],
+        "marks":2
     }
 }

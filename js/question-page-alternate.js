@@ -47,7 +47,7 @@ function fetchQuestions(){
                 });
                 setTimeout(function(){
                 outerDivision.append(innerDivElement+questionTitleElement+codingDataPreDataElemet+"<ul>"+ insideUnorderList+"</ul><hr></div>");
-                },300);
+                },150);
            
             count += 1;
         
