@@ -5,11 +5,12 @@ $(document).ready(function(){
 
 var submittedAnswers = [];
 var correctAnswers = [];
-
+var answerExplaination=[];
 function fetchAnswers(){
     $.getJSON("data/answer.json",function(data){
         $.each(data, function(key,val){
             correctAnswers.push(val["Answer"]);
+            answerExplaination.push(val["Explaination"]);
             // count += 1;
         });
         submittedAnswers = new Array(correctAnswers.length);
@@ -46,7 +47,7 @@ function fetchQuestions(){
 
                 });
                 setTimeout(function(){
-                outerDivision.append(innerDivElement+questionTitleElement+codingDataPreDataElemet+"<ul>"+ insideUnorderList+"</ul><hr></div>");
+                outerDivision.append(innerDivElement+questionTitleElement+codingDataPreDataElemet+"<ul>"+ insideUnorderList+"</ul><hr id="+key+"></div>");
                 },150);
            
             count += 1;
@@ -63,12 +64,22 @@ console.log(submittedAnswers);
 
 function onSubmitTest(){
 var marks = 0;
+$("#loader").addClass("spinner-border text-info");
+$("#marks").html("");
+console.log(correctAnswers);
 
-console.log(correctAnswers)
-for(var i=0; i<submittedAnswers.length;i++){
-    if(submittedAnswers[i] == correctAnswers[i])
-        marks += 1;
-}
-$("#marks").html("<b>Marks: "+marks+"</b>");
+
+setTimeout(function(){
+    
+    for(var i=0; i<submittedAnswers.length;i++){
+        if(submittedAnswers[i] == correctAnswers[i]){
+            marks += 1;
+        }
+        $("<div class='coding-style'><span><b>Correct Answer : "+correctAnswers[i]+"</b></span><br><span><b>Explaination : </b>"+ answerExplaination[i]+"</span><br></div>").insertBefore("#Question_"+(i+1));
+    }
+    $("#marks").html("<b>Marks: "+marks+"</b>");
+    $("#loader").removeClass("spinner-border text-info");
+
+},2500);
 
 }

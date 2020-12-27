@@ -1,11 +1,14 @@
 {
     "Question_1":{
-        "Answer": "B"
+        "Answer": "B",
+        "Explaination":"This is q1"
     },
     "Question_2":{
-        "Answer": "C"
+        "Answer": "C",
+        "Explaination":"This is q2"
     },
     "Question_3":{
-        "Answer": "B"
+        "Answer": "B",
+        "Explaination":"This is q3"
     }
 }
